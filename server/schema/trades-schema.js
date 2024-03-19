@@ -8,9 +8,18 @@ const tradeSchema = new Schema({
         enum: ['BUY', 'SELL'],
         required: true
     },
-    quantity: Number,
-    pricePerUnit: Number,
-    tradeDate: Date,
+    quantity: {
+        type: Number,
+        required: true
+    },
+    pricePerUnit: {
+        type: Number,
+        required: true
+    },
+    tradeDate: {
+        type: Date,
+        required: true
+    },
     stockId: {
         type: Types.ObjectId,
         ref: 'stocks',
