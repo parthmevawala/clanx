@@ -1,0 +1,16 @@
+{
+    "PORT": 3000,
+    "MONGO_DB": {
+        "URL": "mongodb://localhost:27017",
+        "DATABASE": "portfolio"
+    },
+    "BASIC_DATA": {
+        "STOCKS": [
+            "AAPL",
+            "NDAQ",
+            "AMC",
+            "AMG",
+            "AME"
+        ]
+    }
+}
